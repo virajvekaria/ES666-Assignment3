@@ -1,6 +1,7 @@
 import pdb
 import glob
 import cv2
+import os
 from src.JohnDoe import some_function
 from src.JohnDoe.some_folder import folder_func
 
@@ -10,7 +11,7 @@ class PanaromaStitcher():
 
     def make_panaroma_for_images_in(self,path):
         imf = path
-        all_images = sorted(glob.glob(imf+'./*'))
+        all_images = sorted(glob.glob(imf+os.sep+'*'))
         print('Found {} Images for stitching'.format(len(all_images)))
 
         ####  Your Implementation here

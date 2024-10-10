@@ -1,6 +1,7 @@
 import pdb
 import glob
 import cv2
+import os
 
 class PanaromaStitcher():
     def __init__(self):
@@ -8,7 +9,7 @@ class PanaromaStitcher():
 
     def make_panaroma_for_images_in(self,path):
         imf = path
-        all_images = sorted(glob.glob(imf+'./*'))
+        all_images = sorted(glob.glob(imf+os.sep+'*'))
         print('Found {} Images for stitching'.format(len(all_images)))
 
         ####  Your Implementation here
