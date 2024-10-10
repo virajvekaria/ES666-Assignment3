@@ -35,7 +35,7 @@ Running `main.py` should create `./results` folder and exit without Error.
     Note:  You can organise your code however you want but yout folder must have `stitcher.py` file containing class `PanaromaStitcher` with atleast one method named `make_panaroma_for_images_in` returning Final stitched Image and Homography matrices.
 
     - `main.py :` Main file to run all Implementations inside `src`. Edit `Line-11` with folder of images to be stitched.
-    - Check other submssions by `JaneDoe` and `DartVader`
+    - Check other submssions by `JaneDoe` and `DarthVader`
 
 
 ## Create Your Stitcher
@@ -49,8 +49,7 @@ Note: For Homography matrix estimation, use of library functions are not allowed
 
 
 ## Submission
- - Finally, Upload the final code to the forked repostory. 
- - Push the code to the repository.
+ - Finally, Upload the code to the your repository. 
 
 ```
 git add .
