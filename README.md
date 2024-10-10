@@ -77,5 +77,5 @@ In case you want to merge your implementation of Panaroma stitching to https://g
   - Share your folder with me via mail. (Not recommended)
 
 
-Why should you this? After your code is merged, `main.py` file can generate results for stitching of your implementation along with `JanDoe`, `JohnDoe` and hopefully for `DarthVader` if he is able to fix his error till submission deadline: 27th Oct 2024.
+Why should you this? After your code is merged, `main.py` file can generate results for stitching of your implementation and others who opt to submit; along with `JanDoe`, `JohnDoe` and hopefully `DarthVader` if he is able to fix his error till submission deadline: 27th Oct 2024.
 
