@@ -62,7 +62,7 @@ Edit the shared colab file with your repo and share the results.
 
 
 ## Merge your fork with original repo (Optional)
-In case you want to merge your awesome implementation of Panaroma stitching to https://github.com/shash29-dev/ES666-Assignment3.git
+In case you want to merge your implementation of Panaroma stitching to https://github.com/shash29-dev/ES666-Assignment3.git
 
  - Learn about create pull request features of github. If there are no conflicts, The code will be merged. (In this case you migh want to push your code on a branch instead of main)
   ```
