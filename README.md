@@ -40,10 +40,12 @@ Running `main.py` should create `./results` folder and exit without Error.
 
 ## Create Your Stitcher
 
- - Check output related to`DartVader's` submission. The `try` block in `main.py` should not fail. The returned outputs from `stitcher.py` should be in required order: stitched_image and a list of matrices. The `stitched_image` will get saved in `./results` folder.
+ - Check output related to`DarthVader's` submission. The `try` block in `main.py` should not fail. The returned outputs from `stitcher.py` should be in required order: stitched_image and a list of matrices. The `stitched_image` will get saved in `./results` folder.
  - You can delete dummy submssions included in Repo. 
  - Create a folder inside src with `stitcher.py` and complete the class method `make_panaroma_for_images_in` as discussed above.
  - Check `./results` for generated results.
+
+Note: For Homography matrix estimation, use of library functions are not allowed. You can detect and match feature descriptos using utilities provided by existing libraries.
 
 
 ## Submission
