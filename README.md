@@ -10,11 +10,11 @@ This assignment is intended to provide practical experience with GitHub, along w
  - Install git.
  - Install Python locally in your system. Recommended : open-source distribution of the Python by Anaconda.
  - Install opencv ```pip install opencv-python```
- - Clone the repository @ `https://github.com/shash29-dev/ES666-Assignment3.git`
+ - Fork the repository @ `https://github.com/shash29-dev/ES666-Assignment3.git`  (Not Clone)
 
 ```
 # cd /path/to/folder/where/to/clone
-git clone https://github.com/shash29-dev/ES666-Assignment3.git
+git clone https://github.com/<username>/<forked-repo>.git
 ```
 
 ## Check if boilerplate code works
@@ -44,3 +44,6 @@ Running `main.py` should create `./results` folder and exit without Error.
  - Create a folder inside src with `stitcher.py` and complete the class method `make_panaroma_for_images_in` as discussed above.
  - Check `./results` for generated results.
 
+
+## Submission
+ - 
