@@ -32,7 +32,7 @@ class PanaromaStitcher():
         return stitched_image, homography_matrix_list 
 
     def say_hi(self):
-        print('Hii From John Doe..')
+        print('Hii From Jane Doe..')
     
     def do_something(self):
         return None
