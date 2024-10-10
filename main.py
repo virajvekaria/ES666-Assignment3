@@ -8,7 +8,7 @@ import cv2
 
 
 ### Change path to images here
-path = 'Images/*'
+path = 'Images{}*'.format(os.sep)  # Use os.sep, Windows, linux have different path delimiters
 ###
 
 all_submissions = glob.glob('./src/*')
