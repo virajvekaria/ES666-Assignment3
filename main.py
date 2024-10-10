@@ -5,10 +5,13 @@ import importlib
 import os
 import cv2
 
-all_submissions = glob.glob('./src/*')
 
 
+### Change path to images here
 path = 'Images/I1/'
+###
+
+all_submissions = glob.glob('./src/*')
 os.makedirs('./results/', exist_ok=True)
 for idx,algo in enumerate(all_submissions):
     print('****************\tRunning Awesome Stitcher developed by: {}  | {} of {}\t********************'.format(algo.split(os.sep)[-1],idx,len(all_submissions)))
@@ -23,7 +26,11 @@ for idx,algo in enumerate(all_submissions):
 
         ###
         stitched_image, homography_matrix_list = inst.make_panaroma_for_images_in(path=path)
-        cv2.imwrite('./results/{}.png'.format(spec.name),stitched_image)
+
+        outfile =  './results/{}/{}.png'.format(os.path.dirname(path).split('/')[-1],spec.name)
+        os.makedirs(os.path.dirname(outfile),exist_ok=True)
+        cv2.imwrite(outfile,stitched_image)
+        print(homography_matrix_list)
         print('Panaroma be saved ... @ ./results/{}.png'.format(spec.name))
         print('\n\n')
 
