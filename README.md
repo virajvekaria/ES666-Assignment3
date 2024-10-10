@@ -1,2 +1,8 @@
-# ES666-Assignment3
-ES666
+
+# EE-666: Assignment 3 - Panaroma Stitching
+
+### Pre-requisites
+ - Github Account.  Don't have one still? Create one.
+
+
+
