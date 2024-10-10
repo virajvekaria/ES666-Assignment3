@@ -26,7 +26,9 @@ class PanaromaStitcher():
         # Collect all homographies calculated for pair of images and return
         homography_matrix_list =[]
         # Return Final panaroma
-        stitched_image = cv2.imread(all_images[0])
+        stitcher = cv2.Stitcher_create()
+        status, stitched_image = stitcher.stitch([cv2.imread(im) for im in all_images])
+        # stitched_image = cv2.imread(all_images[0])
         #####
         
         return stitched_image, homography_matrix_list 
