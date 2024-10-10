@@ -8,7 +8,7 @@ import cv2
 
 
 ### Change path to images here
-path = 'Images/I1/'
+path = 'Images/*'
 ###
 
 all_submissions = glob.glob('./src/*')
@@ -25,14 +25,16 @@ for idx,algo in enumerate(all_submissions):
         inst = PanaromaStitcher()
 
         ###
-        stitched_image, homography_matrix_list = inst.make_panaroma_for_images_in(path=path)
+        for impaths in glob.glob(path):
+            print('\t\t Processing... {}'.format(impaths))
+            stitched_image, homography_matrix_list = inst.make_panaroma_for_images_in(path=impaths)
 
-        outfile =  './results/{}/{}.png'.format(os.path.dirname(path).split('/')[-1],spec.name)
-        os.makedirs(os.path.dirname(outfile),exist_ok=True)
-        cv2.imwrite(outfile,stitched_image)
-        print(homography_matrix_list)
-        print('Panaroma saved ... @ ./results/{}.png'.format(spec.name))
-        print('\n\n')
+            outfile =  './results/{}/{}.png'.format(impaths.split(os.sep)[-1],spec.name)
+            os.makedirs(os.path.dirname(outfile),exist_ok=True)
+            cv2.imwrite(outfile,stitched_image)
+            print(homography_matrix_list)
+            print('Panaroma saved ... @ ./results/{}.png'.format(spec.name))
+            print('\n\n')
 
     except Exception as e:
         print('Oh No! My implementation encountered this issue\n\t{}'.format(e))
